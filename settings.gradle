@@ -1,0 +1,3 @@
+include ':softlib'
+include ':app'
+rootProject.name = "DemoSoft"
