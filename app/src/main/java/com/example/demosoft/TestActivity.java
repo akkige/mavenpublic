@@ -27,7 +27,7 @@ public class TestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_test);
 
         enteredAmount = getIntent().getStringExtra("EXTRA_AMOUNT");
-        if(enteredAmount!=null){
+        if (enteredAmount != null) {
             edt_amount.setText(enteredAmount);
             mSubmitBtn.setText(" Thank you");
             mSubmitBtn.setEnabled(false);
@@ -35,7 +35,7 @@ public class TestActivity extends AppCompatActivity {
         Log.d("amount", "entered B" + enteredAmount);
         edt_amount = (EditText) findViewById(R.id.ed_enter_amount);
 
-        Log.d("amount","entered A"+enteredAmount);
+        Log.d("amount", "entered A" + enteredAmount);
         mSubmitBtn = (Button) findViewById(R.id.btn_submit);
 
         mSubmitBtn.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +43,7 @@ public class TestActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), AmountFragment.class);
                 enteredAmount = edt_amount.getText().toString();
-                Log.d("amount","entered A"+enteredAmount);
+                Log.d("amount", "entered A" + enteredAmount);
                 intent.putExtra("EXTRA_AMOUNT", enteredAmount);
                 startActivity(intent);
             }
