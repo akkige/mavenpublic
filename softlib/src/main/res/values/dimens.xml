@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <!-- Crop Library Start -->
+    <dimen name="crop__bar_height">56dp</dimen>
+    <dimen name="alert_width">280dp</dimen>
+    <dimen name="alert_height">200dp</dimen>
+    <dimen name="space_vertical_small">8dp</dimen>
+    <dimen name="dialog_icon">50dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="space_vertical">24dp</dimen>
+    <dimen name="font_size_value">35sp</dimen>
+    <dimen name="space_horizontal_small">8dp</dimen>
+    <dimen name="space_horizontal">16dp</dimen>
+    <dimen name="font_size_prompt">16sp</dimen>
+    <dimen name="font_size_hint">14sp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="margin_very_high">13dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="padding_medium">3dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <!-- Crop Library End -->
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="activity_margin_quarter">4dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+    <dimen name="paddingItemDecorationDefault">8dp</dimen>
+    <dimen name="paddingItemDecorationEdge">24dp</dimen>
+    <dimen name="poster_thumb_width">72dp</dimen>
+    <dimen name="poster_thumb_height">96dp</dimen>
+    <dimen name="poster_hero_height">192dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="btn_height">55dp</dimen>
+    <dimen name="btn_margin_start">25dp</dimen>
+    <dimen name="keys_height">52dp</dimen>
+    <dimen name="keys_textsize">24dp</dimen>
+    <dimen name="keys_margin">10dp</dimen>
+    <dimen name="btn_margin_top">20dp</dimen>
+</resources>

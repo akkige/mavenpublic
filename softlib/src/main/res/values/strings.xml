@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="enter_amount">Enter Amount</string>
+    <string name="check_pos_service">check pos service</string>
+    <string name="amount_arabic">كمية</string>
+
+    <string name="app_name">Geidea SoftPos</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">CANCEL</string>
+
+    <string name="lt_gt">&#60;لايوجد عمليات&#62;</string>
+    <string name="lt_no_transactions_gt">&#60;NO TRANSACTIONS&#62;</string>
+</resources>

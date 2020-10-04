@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4D00</color>
+    <color name="colorPrimaryDark">#FF4D00</color>
+    <color name="colorPrimaryAlpha">#110032a0</color>
+    <color name="colorAccent">#FF4D00</color>
+    <color name="accent">#FF4D00</color>
+    <color name="colorAccentAlpha">#440033a0</color>
+    <color name="parentBackground">#eceff1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="nav_text_color">#F0F0F0</color>
+    <color name="blackAlpha">#AA000000</color>
+    <color name="green">#389F70</color>
+    <color name="red">#BE0027</color>
+    <color name="voidColor">#BE0027</color>
+    <color name="refundColor">#233445</color>
+    <color name="darkGray">#AAADC4</color>
+
+    <!-- Crop Library Start -->
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <!-- Crop Library End -->
+
+    <color name="navigationViewBackground">#283B54</color>
+
+    <color name="label_color">#2D3E5A</color>
+    <color name="edit_text_bg">#F2F2F2</color>
+    <color name="edit_text_color">#47556E</color>
+    <color name="radio_button_color">#39F</color>
+    <color name="version_color">#BDBDBD</color>
+    <color name="nav_title_color">#F2F1F6</color>
+    <color name="colorBlue">#39F</color>
+    <color name="colorGrey">#F2F1F6</color>
+</resources>

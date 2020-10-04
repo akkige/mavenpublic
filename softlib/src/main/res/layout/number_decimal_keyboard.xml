@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    >
+<androidx.gridlayout.widget.GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="1"
+    android:layout_gravity="center"
+
+    android:stretchMode="spacingWidthUniform"
+    app:rowCount="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/key1"
+            style="@style/key"
+            android:text="@string/one" />
+
+        <TextView
+            android:id="@+id/key2"
+            style="@style/key"
+            android:text="@string/two" />
+
+        <TextView
+            android:id="@+id/key3"
+            style="@style/key"
+            android:text="@string/three" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/key4"
+            style="@style/key"
+            android:text="@string/four" />
+
+        <TextView
+            android:id="@+id/key5"
+            style="@style/key"
+            android:text="@string/five" />
+
+        <TextView
+            android:id="@+id/key6"
+            style="@style/key"
+            android:text="@string/six" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/key7"
+            style="@style/key"
+            android:text="@string/seven" />
+
+        <TextView
+            android:id="@+id/key8"
+            style="@style/key"
+            android:text="@string/eight" />
+
+        <TextView
+            android:id="@+id/key9"
+            style="@style/key"
+            android:text="@string/nine" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/keyComma"
+            style="@style/key"
+            android:layout_width="30dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_comma" />
+
+        <TextView
+            android:id="@+id/key0"
+            style="@style/key"
+            android:layout_width="30dp"
+            android:text="@string/zero" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/keyBack"
+            style="@style/key"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_backspace" />
+    </LinearLayout>
+
+
+</androidx.gridlayout.widget.GridLayout>
+</LinearLayout>

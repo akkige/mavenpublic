@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_RecSepretor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ReconciliationResultEnglish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="******************************" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:text="23/12/2016"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="24dp"
+            android:id="@+id/tv_RecResponseDate" />
+
+        <TextView
+            android:text="15:29:30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_RecResponseDate"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_RecResponseTime" />
+
+        <TextView
+            android:text="شكرًا لاستخدامكم مدى"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_RecResponseDate"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_RecThankYouLabelArabic" />
+
+        <TextView
+            android:text="THANK YOU FOR USING mada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_RecThankYouLabelArabic"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_RecThankYouLabelEnglish" />
+
+        <TextView
+            android:text="يرجي الاحتفاظ بالايصال"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_RecThankYouLabelEnglish"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_RecRetainReceiptLabelArabic" />
+
+        <TextView
+            android:text="PLEASE RETAIN RECEIPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_RecRetainReceiptLabelArabic"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_RecRetainReceiptLabelEnglish" />
+
+        <TextView
+            android:text="نسخة التاجر"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_RecRetainReceiptLabelEnglish"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_RecRetailerCopyLabelArabic"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="** RETAILER COPY **"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_RecRetailerCopyLabelArabic"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_RecRetailerCopyLabelEnglish"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

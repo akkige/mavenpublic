@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:padding="10dp">
 
-        <EditText
-            android:id="@+id/edt_email"
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@mipmap/purchase_header"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Header"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="email"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"/>
+            android:text="Softpos POC "
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty" />
+    </LinearLayout>
 
-
-
-        <EditText
-            android:id="@+id/edt_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="password"
-            android:inputType="textVisiblePassword"
-            android:maxLines="1"/>
-
-<EditText
-    android:id="@+id/edt_creditcard"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="credit_card"
-    android:inputType="number"
-    android:maxLines="1"/>
-
-    <Button
-        android:id="@+id/btn_validate"
+    <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="validate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:text="Pay using SoftPos :- "
+        android:textSize="@dimen/twenty"
+        android:textColor="@color/black"/>
 
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/twenty" />
+
+    <EditText
+        android:id="@+id/ed_enter_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_amount"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        />
 </LinearLayout>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/fragmentBaseLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="0.5"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/recon_receipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tip_container_bg"
+                android:padding="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relative1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_RecMerchantNameArabic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="سرقة الشايع"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_RecMerchantName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_RecMerchantNameArabic"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="2"
+                        android:text="AL SHAYEE TRADING"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tv_RecMerchantAddressArabic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_RecMerchantName"
+                        android:layout_centerHorizontal="true"
+                        android:text="الملاك فهد ، رياض"
+                        android:textAlignment="center" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tv_RecMerchantAddressEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_RecMerchantAddressArabic"
+                        android:layout_centerHorizontal="true"
+                        android:text="KING FAHAD1"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tv_RecRequestDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tv_RecMerchantAddressEnglish"
+                        android:text="16/11/2016" />
+
+                    <TextView
+                        android:id="@+id/tv_RecRequestTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_RecRequestDate"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="16:24:31" />
+
+                    <TextView
+                        android:id="@+id/tv_RecAcquirer_Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tv_RecRequestDate"
+                        android:paddingRight="5dp"
+                        android:text="BSFB"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/tv_RecMerchnatCategoryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tv_RecAcquirer_Id"
+                        android:text="5411"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_RecSTAN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_RecCardAccID"
+                        android:layout_alignStart="@+id/tv_RecCardAccID"
+                        android:layout_below="@+id/tv_RecAcquirer_Id"
+                        android:text="000077"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_RecversionNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/tv_RecCardAccID"
+                        android:layout_alignRight="@+id/tv_RecCardAccID"
+                        android:layout_below="@+id/tv_RecAcquirer_Id"
+                        android:text="7.18"
+                        android:textSize="10sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_RecTerminalId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_RecRequestTime"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="6312312311456789"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ReconciliationLabelArabic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_RecversionNo"
+                        android:layout_marginTop="13dp"
+                        android:text="موازنة"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/tv_ReconciliationLabelEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tv_ReconciliationLabelArabic"
+                        android:text="RECONCILIATION"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/tv_ReconciliationResultArabic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_ReconciliationLabelEnglish"
+                        android:text="المجاميع مقدمة"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/tv_ReconciliationResultEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tv_ReconciliationResultArabic"
+                        android:text="TOTALS PROVIDED"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/tv_RecSepretor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_ReconciliationResultEnglish"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:text="******************************" />
+
+                    <TextView
+                        android:id="@+id/tv_RecCardAccID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_RecAcquirer_Id"
+                        android:layout_alignBottom="@+id/tv_RecAcquirer_Id"
+                        android:layout_toEndOf="@+id/tv_RecAcquirer_Id"
+                        android:layout_toRightOf="@+id/tv_RecAcquirer_Id"
+                        android:paddingRight="20dp"
+                        android:text="650999000911"
+                        android:textSize="9sp" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/darkGray">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/madaLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/madaa"
+                        layout="@layout/view_reconciliation_each_schme_report" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/darkGray"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/visaLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/visa"
+                        layout="@layout/view_reconciliation_each_schme_report" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/darkGray"></LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/masterCardLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/masterCard"
+                        layout="@layout/view_reconciliation_each_schme_report" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/darkGray"></LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/maestroLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/maestro"
+                        layout="@layout/view_reconciliation_each_schme_report" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/darkGray"></LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/americanExpressLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/americanExpress"
+                        layout="@layout/view_reconciliation_each_schme_report" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/darkGray"></LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/unionPayLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/unionPay"
+                        layout="@layout/view_reconciliation_each_schme_report" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/darkGray"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gccnetLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/gccnet"
+                        layout="@layout/view_reconciliation_each_schme_report" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/darkGray"></LinearLayout>
+
+                <include android:id="@+id/footer" layout="@layout/activity_reconciliation_fotter_receipt" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+           <!-- <Button
+                android:id="@+id/btn_reconciliationReceiptSendRecReport"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:textColor="@color/black"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="CREATE RECEIPT"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAllCaps="false" />-->
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="DONE"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_reconciliationReceiptNextPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="NEXT PAGE" />
+        </LinearLayout>
+    </LinearLayout>

@@ -2,4 +2,9 @@
     package="com.example.softlib">
 
     /
+    <application>
+        <activity android:name=".ui.home.AmountFragment" />
+        <activity android:name=".ui.home.ContactlessFragment" />
+        <activity android:name=".ui.home.ReceiptTotalFragment" />
+    </application>
 </manifest>

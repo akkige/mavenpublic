@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="twenty">20sp</dimen>
+    <dimen name="large_text">36sp</dimen>
+    <dimen name="numeric_keyboard_height">300dp</dimen>
+    <dimen name="twentyfive">25dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="fpur">4dp</dimen>
+    <dimen name="btn_bottom_margin">45dp</dimen>
+    <dimen name="orange_header_height">530dp</dimen>
+    <dimen name="numeric_board_margin">20dp</dimen>
+    <dimen name="btn_height">55dp</dimen>
+    <dimen name="btn_margin_start">25dp</dimen>
+    <dimen name="keys_height">52dp</dimen>
+    <dimen name="keys_textsize">24dp</dimen>
+    <dimen name="keys_margin">10dp</dimen>
+    <dimen name="btn_margin_top">20dp</dimen>
+</resources>
