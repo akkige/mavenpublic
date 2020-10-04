@@ -23,6 +23,7 @@ public class ContactlessFragment extends AppCompatActivity {
     private View dotFourth;
     private TextView messageTV;
     private TextView sarArabic;
+    private LinearLayout linearLayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,12 +44,13 @@ public class ContactlessFragment extends AppCompatActivity {
             dotFourth.setBackgroundResource(R.drawable.elipse_green);
             sarArabic.setVisibility(View.GONE);
             messageTV.setText("Thank you for using SoftPos");
+            linearLayout.setEnabled(false);
         }
         Log.d("amount", "contact less fragment" + enteredAmount);
         TextView tvTotalAmt = (TextView) findViewById(R.id.totalAmountTV);
         tvTotalAmt.setText(enteredAmount);
         // checkPOSService();
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.tap_card_layout);
+         linearLayout = (LinearLayout) findViewById(R.id.tap_card_layout);
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
